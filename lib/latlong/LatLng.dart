@@ -41,7 +41,7 @@ class LatLng {
     double get latitude => _latitude;
 
     void set longitude(final double value) {
-        Validate.inclusiveBetween(-180.0,180.0,_longitude,"Longitude must be between -90 and 90 degrees but was $_longitude");
+        Validate.inclusiveBetween(-180.0,180.0,_longitude,"Longitude must be between -180 and 180 degrees but was $_longitude");
         _longitude = value;
     }
     double get longitude => _longitude;
